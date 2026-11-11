@@ -1,3 +1,3 @@
 import {Config} from '@remotion/cli/config';
 
-Config.setEntryPoint('./canal/producciones/video-001/remotion/index.ts');
+Config.setEntryPoint('./canal/productions/video-001/remotion/index.ts');
