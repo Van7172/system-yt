@@ -27,6 +27,22 @@ Start with your channel identity and fill in the other documents as your first p
 
 Record experiments in the brief. If an experiment produces a rule for the whole channel, update the relevant channel document. To resume a production, open its brief and follow the next step.
 
+## Local environment
+
+The bundled Remotion example runs without credentials. If you add a tool that needs credentials, copy [`.env.example`](.env.example) to `.env` in the kit root. Add the variables the tool requires and put their values in `.env`. Commit variable names and empty or fictional examples in `.env.example`.
+
+```powershell
+if (-not (Test-Path -LiteralPath .env)) {
+    Copy-Item -LiteralPath .env.example -Destination .env
+}
+```
+
+```sh
+[ -e .env ] || cp .env.example .env
+```
+
+Create `.env` only if it is missing. Git ignores `.env` and its variants. Each integration must load the variables through its own configuration or a local script. Keep secrets out of browser-rendered Remotion compositions, composition props, logs, and documentation.
+
 ## Open Remotion
 
 Remotion is configured in the kit. In a local copy with dependencies installed, open the `Video001` composition from the kit root.

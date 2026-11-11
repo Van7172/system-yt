@@ -11,4 +11,6 @@ npm run studio -- canal/productions/video-002/remotion/index.ts
 npm run render -- canal/productions/video-002/remotion/index.ts Video002 out/video-002.mp4
 ```
 
+If a local production script needs credentials, follow the [local environment guide](../../../../README.md#local-environment). Pass only the resulting media or render inputs to Remotion.
+
 If the production needs narration synchronization, keep the alignment alongside the composition and check cuts against the final recording. Use `npm run still` to test a single frame. For a segment, add `--frames=30-59` to the render command and choose a separate output file. Git ignores `out/` and `renders/`.

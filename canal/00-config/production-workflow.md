@@ -9,6 +9,7 @@ What each stage delivers and how to review it:
 How to plan scenes, reuse assets, and decide what to create:
 How to check narration, timing, and editing where applicable:
 Tools and locations for source files and renders:
+Optional integrations and their environment variable names. See [Local environment](../../README.md#local-environment):
 How to review a Remotion edit, record issues by timestamp, and verify a corrected segment:
 How to record a release and what to measure to improve the process:
 
@@ -22,6 +23,7 @@ Qué artefacto sale de cada etapa y cómo se revisa:
 Cómo planear escenas, reutilizar material y decidir qué generar:
 Cómo comprobar voz, sincronización y montaje cuando corresponda:
 Herramientas y ubicación de archivos fuente y renders:
+Integraciones opcionales y nombres de sus variables de entorno. Consulta [Entorno local](../../README.md#local-environment):
 Cómo revisar el montaje de Remotion, registrar problemas por tiempo y volver a probar el tramo corregido:
 Cómo registrar la publicación y qué medir para mejorar el proceso:
 -->
