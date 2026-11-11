@@ -4,7 +4,7 @@ A production kit for running a YouTube channel and taking long-form videos, Shor
 
 ## Set up your channel
 
-Open your copy of the kit at the folder containing this README and `package.json`. When the repository is enabled as a GitHub template, you can start a new copy with **Use this template**.
+Clone or download the repository, then open the folder containing this README and `package.json`.
 
 The blank templates contain HTML comments with English instructions first and Spanish instructions second. GitHub hides these comments in the rendered view. Open the source in your editor or use GitHub's pencil icon. Write your own content below the comment in the language you use for your channel.
 
@@ -22,7 +22,7 @@ Start with your channel identity and fill in the other documents as your first p
 
 1. Duplicate the [idea template](canal/ideas/idea-template.md) in the same folder and give it a descriptive name. Record the question, why it matters to your audience, and what you could show to answer it.
 2. When you decide to proceed, duplicate the [video](canal/productions/video-001/), [Short](canal/productions/short-001/), or [music track](canal/productions/track-001/) folder. Use the next available number for that format. Record the promise, status, and next step in `brief.md`. Link to the brief from the idea if you keep both.
-3. Follow the links in the brief. If the production uses Remotion, put its composition in `remotion/` and review a draft before preparing the release. For a music track, start from `production-plan.md`. Keep reusable [assets](canal/assets/) and shared [references](canal/references/) in their channel folders.
+3. Follow the links in the brief. If the production uses Remotion, put its composition in `remotion/` and review a draft before preparing the release. For a music track, start from `production-plan.md`. Keep reusable [assets](canal/assets/) and shared [references](canal/references/) in their channel folders. To edit a Short in Remotion, copy the [example composition folder](canal/productions/video-001/remotion/) into the Short and adjust its framing and duration.
 4. Record the selected title, description, and other release details in `publishing.md`. After publishing, record the final URL there, update the status in the brief, and link to that brief from the [published index](canal/published-index.md).
 
 Record experiments in the brief. If an experiment produces a rule for the whole channel, update the relevant channel document. To resume a production, open its brief and follow the next step.
@@ -41,7 +41,7 @@ if (-not (Test-Path -LiteralPath .env)) {
 [ -e .env ] || cp .env.example .env
 ```
 
-Create `.env` only if it is missing. Git ignores `.env` and its variants. Each integration must load the variables through its own configuration or a local script. Keep secrets out of browser-rendered Remotion compositions, composition props, logs, and documentation.
+Git ignores `.env` and its local variants. The example includes an empty `ELEVENLABS_API_KEY` for optional voice generation. If you add an ElevenLabs script or tool, set the real key in `.env` and have that tool load it. The kit provides the variable example. Keep secrets out of browser-rendered Remotion compositions, composition props, logs, and documentation.
 
 ## Open Remotion
 
